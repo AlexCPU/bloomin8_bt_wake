@@ -3,7 +3,6 @@ from homeassistant.components.bluetooth import async_ble_device_from_address
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
-from homeassistant.const import CONF_MAC_ADDRESS
 
 import bleak
 from bleak import BleakClient
@@ -13,6 +12,7 @@ from .const import (
     BLE_SERVICE_UUID,
     BLE_CHAR_UUID,
     BLE_WAKE_PAYLOAD,
+    CONF_MAC_ADDRESS,
 )
 
 _LOGGER = logging.getLogger(__name__)
