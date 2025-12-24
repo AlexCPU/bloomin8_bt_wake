@@ -1,0 +1,12 @@
+{
+    "domain": "bloomin8_bt_wake",
+    "name": "Bloomin8 Bluetooth Wake",
+    "codeowners": [],
+    "config_flow": true,
+    "dependencies": [
+        "bluetooth"
+    ],
+    "documentation": "https://github.com/ARPOBOT-BLOOMIN8/bloomin8_bt_wake",
+    "iot_class": "local_polling",
+    "version": "1.0.0"
+}
