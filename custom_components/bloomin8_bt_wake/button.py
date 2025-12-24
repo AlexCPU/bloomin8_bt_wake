@@ -5,7 +5,6 @@ import logging
 
 from homeassistant.components.button import ButtonEntity
 from homeassistant.config_entries import ConfigEntry
-from homeassistant.const import CONF_MAC_ADDRESS
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 
@@ -17,6 +16,7 @@ from .const import (
     BLE_SERVICE_UUID,
     BLE_CHAR_UUID,
     BLE_WAKE_PAYLOAD,
+    CONF_MAC_ADDRESS,
 )
 
 _LOGGER = logging.getLogger(__name__)

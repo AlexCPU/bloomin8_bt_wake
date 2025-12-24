@@ -7,14 +7,15 @@ from typing import Any
 import voluptuous as vol
 
 from homeassistant import config_entries
-from homeassistant.const import CONF_MAC_ADDRESS, CONF_NAME
+from homeassistant import config_entries
+from homeassistant.const import CONF_NAME
 from homeassistant.data_entry_flow import FlowResult
 
-from .const import DOMAIN, DEFAULT_NAME
+from .const import DOMAIN, DEFAULT_NAME, CONF_MAC_ADDRESS
 
 _LOGGER = logging.getLogger(__name__)
 
-class Bloomin8BtWakeConfigFlow(config_entries.ConfigFlow):
+class Bloomin8BtWakeConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Handle a config flow for Bloomin8 Bluetooth Wake."""
 
     VERSION = 1
